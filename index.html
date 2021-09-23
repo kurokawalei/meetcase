@@ -49,9 +49,21 @@
       
     </header>
 
-    <section id="header-images">
+    <section id="header-images" class="owl-carousel owl-theme">
 
-      <div class="header-images-box">
+      <div class="item header-images-box">
+
+        <div class="images-info">
+          <p>歐庫生技</p>
+          <p>獨家研發抗體試劑新上市</p>
+          <p>New Geagent Launched</p>
+        </div>
+
+        <img src="images/header_bg.jpg" class="img-fluid">
+
+      </div>
+
+      <div class="item header-images-box">
 
         <div class="images-info">
           <p>歐庫生技</p>
@@ -64,7 +76,74 @@
       </div>
 
 
+      <div class="item header-images-box">
+
+        <div class="images-info">
+          <p>歐庫生技</p>
+          <p>獨家研發抗體試劑新上市</p>
+          <p>New Geagent Launched</p>
+        </div>
+
+        <img src="images/header_bg.jpg" class="img-fluid">
+
+      </div>
+
+
+
+  
+
      
+
+    </section>
+
+
+
+    <section id="about">
+
+
+      <h1 class="text-center">
+        關於我們<span>About us</span>
+      </h1>
+
+
+      <div class="row">
+        <div class="col-md-10">
+
+          <div id="about-images" class="owl-carousel owl-theme">
+
+            <div class="item">
+
+              <img src="images/slider_images.jpg" class="img-fluid">
+      
+            </div>
+
+            <div class="item">
+
+              <img src="images/slider_images.jpg" class="img-fluid">
+      
+            </div>
+
+            <div class="item">
+
+              <img src="images/slider_images.jpg" class="img-fluid">
+      
+            </div>
+
+
+          </div>
+
+        
+
+
+
+
+        
+
+
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+
 
     </section>
 
@@ -86,5 +165,45 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script> 
   <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(function(){
+
+   $('#header-images').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+$('#about-images').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+
+    })
+  </script>
 </body>
 </html>
